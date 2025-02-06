@@ -6,10 +6,12 @@ for i in range(a):
 target = int(input("enter the target number :"))
 
 def indice(x,y):
-    for a in x :
-        for i in range(1,len(x)):
-            if a+x[i]==y :
-                return([x.index(a),i])   
+    for i in range(len(x)) :
+        d =i+1
+        for a in range(d,len(x)):
+            if x[i]+x[a]==y :
+                return([i,a])   
     
 print(indice(array, target))   
+
 
